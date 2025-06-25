@@ -2,8 +2,8 @@
     @php
         $order = $this->order;
         $coffeeShopName = "Okan Coffee Shop";
-        $coffeeShopAddress = "Jl. Raya Contoh No. 123, Jakarta";
-        $coffeeShopPhone = "(021) 1234-5678";
+        $coffeeShopAddress = "Jl. Panongan Raya No. 123, Batam";
+        $coffeeShopPhone = "(+62) 123 4567 8910";
     @endphp
 
     <div class="max-w-4xl mx-auto bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 print:border-none text-gray-800 dark:text-gray-200">

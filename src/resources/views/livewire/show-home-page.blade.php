@@ -26,7 +26,7 @@
           <!-- Logo with white background container -->
           <div class="bg-white p-4 rounded-lg inline-block shadow-lg">
             <img loading="lazy" decoding="async"
-              src="{{ asset('storage/' . $config->image) }}"
+              src="{{ asset('front/assets/okan.png') }}"
               alt="Coffee Okan Logo" 
               class="img-fluid"
               style="max-height: 300px; object-fit: contain;">

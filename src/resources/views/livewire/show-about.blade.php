@@ -22,7 +22,7 @@
       <!-- White background container for the logo -->
       <div class="bg-white p-4 rounded-lg d-inline-block shadow">
         <img loading="lazy" decoding="async"
-          src="{{ asset('storage/' . $about->image) }}"
+          src="{{ asset('front/assets/okan.png') }}"
           alt="Logo Okan" 
           class="img-fluid"
           style="max-height: 300px; width: auto; object-fit: contain;">

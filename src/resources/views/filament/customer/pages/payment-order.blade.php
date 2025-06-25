@@ -1,3 +1,5 @@
-<x-filament-panels::page>
+<x-filament::page>
+    <h2 class="text-xl font-bold mb-4">Laporan Penjualan Harian</h2>
 
-</x-filament-panels::page>
+    <livewire:app.filament.widgets.sale-chart />
+</x-filament::page>

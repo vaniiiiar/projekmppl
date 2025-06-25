@@ -2,32 +2,31 @@
 
 namespace App\Filament\Widgets;
 
-use App\Models\Order;
-use Filament\Widgets\ChartWidget;
+use Filament\Widgets\Widget;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
+use Leandrocfe\FilamentApexCharts\Widgets\ApexChartWidget;
 
-class SalesChart extends ChartWidget
+class SaleChart extends ApexChartWidget
 {
-    protected static ?string $heading = 'Statistik Penjualan';
+    protected static ?string $heading = 'Laporan Penjualan';
 
     protected function getData(): array
-    {
-        // Data dummy untuk testing
-        $data = [
-            'labels' => ['Jan', 'Feb', 'Mar', 'Apr', 'Mei'],
-            'datasets' => [
-                [
-                    'label' => 'Penjualan',
-                    'data' => [1200, 1900, 3000, 2500, 2100],
-                    'backgroundColor' => '#f59e0b',
-                ]
-            ]
-        ];
-
-        return $data;
-    }
-
-    protected function getType(): string
-    {
-        return 'bar';
-    }
+{
+    return [
+        'series' => [
+            [
+                'name' => 'Penjualan Harian',
+                'data' => [50000, 60000, 75000],
+            ],
+        ],
+        'chart' => [
+            'type' => 'line',
+            'height' => 400,
+        ],
+        'xaxis' => [
+            'categories' => ['24 Jun', '25 Jun', '26 Jun'],
+        ],
+    ];
+}
 }
